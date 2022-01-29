@@ -1,16 +1,20 @@
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div>
-      <NavBar />
-      <Component {...pageProps} />
-      <span>"하이하이"</span>
-      <style jsx global>{`
-        a {
-          color: white;
-        }
-      `}</style>
-    </div>
+    <>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      <style jsx global>
+        {`
+          body {
+            max-width: 520px;
+            width: 100%;
+            margin: 0 auto;
+          }
+        `}
+      </style>
+    </>
   );
 }
