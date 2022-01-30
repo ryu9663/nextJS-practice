@@ -5,7 +5,7 @@ export default function NavBar() {
   const router = useRouter();
   return (
     <nav>
-      <img src="https://aneun-dongne.s3.ap-northeast-2.amazonaws.com/1639895026861_origin.png" />
+      <img src="KakaoTalk_Photo_2022-01-23-21-01-43 003.jpeg" />
       <div>
         <Link href="/">
           <a className={router.pathname === "/" ? "active" : ""}>Home</a>
